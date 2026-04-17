@@ -24,3 +24,9 @@ Three-module structure with clear separation of concerns:
 ## Stocks Tracked
 
 Petrobras (PETR4), Itaú (ITUB4), Vale (VALE3) — Brazilian B3 exchange, data from Jan 2, 2025 onward.
+
+## GitHub Sync
+
+Repository: https://github.com/kaucap08/projeto_claude
+
+A PostToolUse hook in `.claude/settings.local.json` auto-commits and pushes every time a file is written or edited. The hook runs async, commits with message `auto: update <filename>`, and pushes to `origin main`. The GitHub token is embedded in the remote URL — do not expose it in logs or output.
